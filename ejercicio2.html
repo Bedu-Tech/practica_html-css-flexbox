@@ -1,0 +1,89 @@
+<!--       https://www.youtube.com/watch?v=wcFnnxfA70g-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--especifica las relaciones entre el documento actual y un recurso externo. Este elemento se usa más comúnmente para vincular a hojas de estilo.-->
+    <!--link de google fonts https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis|Indie+Flower|Josefin+Sans|Kaushan+Script|Knewave|Monoton" rel="stylesheet">
+    
+    <!--link de la carpeta de css "estilos"-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>primer pagina web con estilo css</title>
+</head>
+
+<body>
+   
+   <!--utilizamos la etiqueta para hacer una seccion, donde ingresaremos una imagen y ubicamos una lista de link con la etiqueta <a>-->
+    <section class="cover_image">
+        <h1>MI PRIMER PAGINA WEB CON ESTILO CSS</h1>
+        <div class="menu">
+            <a href="flexbox.html" target="_blank">FLEXBOX</a>
+            <a href="link_2">link 2</a>
+            <a href="link_3">link 3</a>
+        </div>
+    </section>
+    
+    <!--realizacion de un menu de anclaje dentro de la misma pagina web -->
+    
+    <div id="navegation_menu">
+        <h2>MENU LATERAL</h2>
+        <br>
+        <ul>
+            <li><a href="#HTML">¿que es html?</a></li>
+            <li><a href="#CSS">¿que es css?</a></li>
+            <li><a href="#ETIQUETA">etiquetas</a></li>
+            <li><a href="#identificador">identificadores y clases</a></li>
+        </ul>
+    </div>
+    <h2 id="gallery">GALERIA DE FOTOS</h2>
+
+   
+   <!--lista para ingresar imagenes -->
+    <nav id="photos">
+        <img src="img/1.png" alt="">
+        <img src="img/2.png" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.png" alt="">
+        <img src="img/5.png" alt="">
+        <img src="img/6.png" alt="">
+    </nav>
+
+   <!-- contenido e identificadores, estilos cpon css-->
+    <div id="contenido">
+
+        <h1>INFORMACION</h1>
+
+        <h2 id="HTML">HTML</h2>
+
+        <p id="html">
+            Actualmente la mayoría de las personas han visto cientos de páginas web pero muchos se preguntarán ¿Qué es HTML? ¿Para qué me sirve? ¿Cómo funciona? ¿Es difícil escribir en HTML? ¿Dónde puedo escribir HTML? Y otras preguntas como estas serán respondidas a continuación. Si buscas en GOOGLE o en cualquier otro buscador la definición de HTML, probablemente encontrarás está: “HTML es un lenguaje de programación que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto”. No obstante, este tipo de definiciones no nos dice mucho porque la definición es técnica. Para algunas personas al leer esto, piensan que HTML incluye el diseño gráfico de las páginas web, sin embargo, eso no es cierto ya que HTML sólo sirve para indicar como va ordenado el contenido de una página web. Esto lo hace por medio de las marcas de hipertexto las cuales son etiquetas conocidas en inglés como tags. Hasta el momento ya tenemos una idea sobre lo que hace HTML pero aún no sabemos cómo funcionan las etiquetas. Para esto vamos a imaginar que tienen que hacer un ensayo sobre algún tema, consideraremos que el ensayo será nuestra página web y la manera en la que va ordenado un ensayo es por un título, la introducción, el desarrollo y la conclusión, si se tiene en cuenta que esto nos dice cómo debe ir nuestro ensayo podemos considerar que éstas serían las etiquetas porque nos dicen la estructura que lleva, es decir, la forma en que se acomoda el texto en nuestro ensayo. Cabe mencionar que las etiquetas no sólo sirven para ordenar nuestro contenido sino que ayudan a los buscadores como Google, Yahoo search y muchos otros a encontrar la información por medio de las etiquetas.
+        </p>
+        <hr>
+
+
+        <h2 id="CSS">CSS</h2>
+        <p id="css">
+            Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje utilizado para describir la presentación de documentos HTML o XML, esto incluye varios lenguajes basados en XML como son XHTML o SVG. CSS describe como debe ser renderizado el elemento estructurado en pantalla, en papel, hablado o en otros medios. CSS es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte del W3C. Desarrollado en niveles, CSS1 es ahora obsoleto, CSS2.1 es una recomendación y CSS3, ahora dividido en módulos más pequeños, está progresando en camino al estándar. Como ya hemos mencionado, CSS es un lenguaje que se usa para diseñar la forma de presentar los documentos a los usuarios — su estilo, diseño, etc. Un documento suele ser un archivo de texto estructurado usando un Lenguaje de marcado — HTML es el más común, pero hay otros como SVG o XML. Presentar un documento a un usuario implica convertirlo en algo que este pueda utilizar. Navegadores (Browsers), como Firefox, Chrome o Internet Explorer, están diseñados para presentar documentos de forma visual, por ejemplo en una pantalla de ordenador, un proyector o una impresora.
+        </p>
+        <hr>
+
+        <h2 id="ETIQUETA">ETIQUETAS</h2>
+        <p>
+            A grandes rasgos, en un documento HTML existen dos tipos de etiquetas HTML: las etiquetas que contienen fragmentos de texto (se utilizan para dar significado a esas palabras o fragmentos) y las etiquetas que agrupan conjunto de información (fragmentos de texto y/u otras etiquetas). En el siguiente ejemplo, tenemos la etiqueta , que pertenece al segundo grupo (agrupación), mientras que la etiqueta "strong" forma parte del primer grupo, que es del que vamos a hablar en esta sección:
+
+        </p>
+        <hr>
+        <h2 id="identificador">INDENTIFICADORES Y CLASES</h2>
+        <p>
+            A veces tenemos varias etiquetas del mismo tipo pero queremos aplicar diferentes estilos según donde estén. Para esto usamos los identificadores y las clases. La principal diferencia entre ellos es que los identificadores tienen que ser únicos en todo el documento HTML mientras que las clases pueden repetirse todas las veces que queramos. La otra diferencia es la forma de definirlos y de utilizarlos: En HTML para indicar el identificador de una etiqueta usaremos el atributo "id", mientras que para indicar la clase usaremos "class":
+        </p>
+    </div>
+</body>
+
+</html>

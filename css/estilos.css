@@ -1,0 +1,144 @@
+/* elimina todas las diferencias en el relleno y el margen en todos los navegadores*/
+
+/*-https://css-tricks.com/margin-0-padding-0-no-longer-cool
+  -https://www.w3schools.com/css/css_padding.asp/
+  -https://www.w3schools.com/css/css_margin.asp*/
+
+* {
+    margin: 0;
+    /*Las propiedades de margen CSS se usan para crear espacio alrededor de elementos, fuera de cualquier borde definido.*/
+    padding: 0;
+    /*Las propiedades de relleno de CSS se usan para generar espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.*/
+}
+
+/*estilo de todo el cuerpo de html para implementacion de css, etiqueta body de html*/
+body 
+{
+    background-color: firebrick; /*La propiedad de color de fondo especifica el color de fondo de un elemento.*/
+    /*https://www.w3schools.com/css/css_background.asp*/
+}
+
+/*
+En un documento HTML, los selectores de clase buscan un elemento basado en el contenido de su atributo class. El atributo class está definido como una lista de elementos separados por espacio, y uno de esos elementos debe coincidir exactamente con el nombre de clase dado en el selector. esta clase es arrastada de <section class="cover_image"> del html*/
+/*https://developer.mozilla.org/es/docs/Web/CSS/Class_selectors*/
+.cover_image 
+{
+    background-image: url("https://images3.alphacoders.com/675/675273.jpg");/**/
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+}
+
+/*inseccion de icono*/
+.cover_image a:before {
+    content: '⇉';
+}
+/*en la clase menu daremos un margen de 270px*/
+.menu {
+    margin-top: 270px;
+}
+
+/*agregamos propiedades a nuesta etiquetas*/
+.menu a {
+
+    color: yellow;
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+h1 {
+    color: cornsilk;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*estilo de menu del identificador #navegation_menu, fue tomado de la pagina https://blog.endeos.com/lleva-las-listas-html-al-siguiente-nivel-con-css/*/
+
+#navegation_menu 
+{
+    float: right;
+}
+
+#navegation_menu ul {
+    list-style: none;
+}
+
+#navegation_menu ul li {
+
+    font-family: Georgia, serif, Times;
+    font-size: 18px;
+}
+
+#navegation_menu ul li a {
+    display: block;
+    width: 300px;
+    height: 28px;
+    background-color: #333;
+    border-left: 5px solid #222;
+    border-right: 5px solid #222;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #bfe1f1;
+}
+
+#navegation_menu ul li a:hover {
+    -moz-transform: rotate(-5deg);
+    -moz-box-shadow: 10px 10px 20px #000000;
+    -webkit-transform: rotate(-5deg);
+    -webkit-box-shadow: 10px 10px 20px #000000;
+    transform: rotate(4deg);
+    box-shadow: 10px 10px 20px #000000;
+    margin-left: 10px;
+}
+
+h2 {
+    color: darkturquoise;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+#gallery {
+    color: beige;
+    font-family: inherit;
+}
+
+#photos {
+    width: 370px;
+}
+
+#photos img {
+    width: 100px;
+    height: 69px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 9px;
+    margin-bottom: 15px;
+    margin-left: 9px;
+    background: silver;
+}
+
+#contenido h1 {
+    color: aqua;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+#contenido h2 {
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    text-align: left;
+}
+
+#contenido p {
+    color: azure;
+}
+
+#contenido hr {
+    background-color: blue;
+    height: 10px;
+    margin-right: 0%;
+    width: 50%;
+}
